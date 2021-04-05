@@ -9,8 +9,9 @@ Parameters: chromosome length and crossover positions.
 This simulation illustrates our prediction of short and long arm identity. A single chromosome has signals emanating in both directions from all specified crossovers. After a certain amount of time has passed, new signals stop emerging and the remaining signals equalize out. The resulting signal height is used to determine, for each crossover, which direction is "short arm" and which direction is "long arm".
 
 
-`ssd.py` -- can run from notebook or command line
-Parameters given in file `ssd.conf`. Each line of `ssd.conf` represents one chromosome that is to be simulated. For each chromosome (each line of the text file), there are at least 2 numbers. The first number is the chromosome length; the second (and more, if present) is the crossover position(s). To specify a non-crossover chromosome, use a crossover position that is greater than the total chromosome length. You may specify as many chromosomes and crossovers as you wish.
+`ssd.py` -- can run from notebook or command line.
+
+Parameters are given in file `ssd.conf`. Each line of `ssd.conf` represents one chromosome that is to be simulated. For each chromosome (each line of the text file), there are at least 2 numbers. The first number is the chromosome length; the second (and more, if present) is the crossover position(s). To specify a non-crossover chromosome, use a crossover position that is greater than the total chromosome length. You may specify as many chromosomes and crossovers as you wish.
 
 The simulation runs as follows: thousands of individual molecules of SYP-1 are created with the following properties:
  1. position (chromosome #, coordinate ∷ -1 for "not localized to a chromosome" e.g. nucleoplasmic)
