@@ -1,28 +1,27 @@
 #ssd -- sypsim_struct_discrete
-#020210226pmc
+#020210614pmc -- from 'ssdgit.py' on surprise
 
 import numpy as np
 from matplotlib import pyplot as pl
 from PIL import Image as im
 
-nruns=15000
-corun=2000      # COs made after this run number
-nsyps=6000
+nruns=5000
+corun=500      # COs made after this run number
+nsyps=2000
 nplks=600
-sbsmax=8        # max allowed value for "SBS", the PLK-2-phosphorylated substrate
-sypmax=3        # max allowed value for "SYP", the SC central element array
-ph_off=0.5     # phos-SYP off-rate (off if random value is lower)
-np_off=0.5     # non-phos SYP off-rate (off if random value is lower)
-phos_init=0.5   #chance of SYP-1 being phosphorylated before COs kick in
+sbsmax=30        # max allowed value for "SBS", the PLK-2-phosphorylated substrate
+sypmax=4        # max allowed value for "SYP", the SC central element array
+ph_off=0.05     # phos-SYP off-rate (off if random value is lower)
+np_off=0.10     # non-phos SYP off-rate (off if random value is lower)
+phos_init=0.1   #chance of SYP-1 being phosphorylated before COs kick in
 syp_on=0.9      # SYP on-rate
-fr_dep=0.9      # chance of getting dephosphorylated if free
+fr_dep=1.0      # chance of getting dephosphorylated if free
 bo_dep=0.0      # chance of getting dephosphorylated if bound
 bo_plkloss=0.0      # chance of losing plk-2 if bound
-co_pho=0.6      # chance of getting phosphorylated near CO
-syp_dc=0.5     # chance of SYP moving from its current position
-sbs_mult=0.9    # modifier of SYP attractiveness for phosphorylated SBS
-sbs_deph=0.2   # rate of SBS dephosphorylation
-
+co_pho=1.0      # chance of getting phosphorylated near CO
+syp_dc=1.0     # chance of SYP moving from its current position
+sbs_mult=0.5    # modifier of SYP attractiveness for phosphorylated SBS
+sbs_deph=0.4   # rate of SBS dephosphorylation
 
 
 class syp1:
@@ -123,8 +122,8 @@ def syp_step(run):
             if(i.phos):
                 takeoff=ph_off*sbsfactor
             else:
-                takeoff=np_off
-                #takeoff=np_off*sbsfactor #20210302pmc--to make SYP-nonphos sensitive to sbs
+                #takeoff=np_off
+                takeoff=np_off*sbsfactor #20210302pmc--to make SYP-nonphos sensitive to sbs
 
             if(np.random.random()<takeoff):         #SYP comes off the chromosome, PLK comes off by necessity
                 i.xs=-1
