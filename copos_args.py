@@ -183,6 +183,6 @@ pos=[int(x) for x in sys.argv[2:]] #for N crossovers
 #pos=[int(x) for x in sys.argv[2:4]]
 #starttimes=[float(x) for x in sys.argv[4:6]]
 #endtimes=[float(x) for x in sys.argv[6:8]]
-copos_plot_anim_gaps(xsl=xsl,pos=pos)
-#copos_plot_all(xsl=xsl,pos=pos)
+#copos_plot_anim_gaps(xsl=xsl,pos=pos)
+copos_plot_all(xsl=xsl,pos=pos)
 pl.savefig("copos.pdf",dpi=150)
