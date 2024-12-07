@@ -1,5 +1,4 @@
-#ssd -- sypsim_struct_discrete
-#trying a few things in Python, it might not work
+#ssd-plkco -- sypsim_struct_discrete, plk only comes on at CO
 #020210226pmc
 
 import numpy as np
@@ -9,8 +8,8 @@ from PIL import Image as im
 nruns=5000
 nsyps=3000
 nplks=300
-sbsmax=30
-sypmax=2
+sbsmax=8
+sypmax=3
 phosinit=0.1   #initial syp-1-phos rate
 ph_off=0.025     # phos-SYP off-rate
 np_off=0.05     # non-phos SYP off-rate
@@ -21,7 +20,7 @@ bo_plkloss=0.0      # chance of losing plk-2 if bound
 co_pho=1      # chance of getting phosphorylated near CO
 syp_dc=1     # chance of SYP moving from its current position
 sbs_mult=0.1    # modifier of SYP attractiveness for phosphorylated SBS
-sbs_deph=0.5   # rate of SBS dephosphorylation
+sbs_deph=0.1   # rate of SBS dephosphorylation
 
 class syp1:
     gen=0

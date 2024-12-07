@@ -7,7 +7,8 @@ from matplotlib import cm
 import sys
 
 pl.rcParams['figure.dpi'] = 150
-plotymax=800
+pl.rcParams['figure.figsize'] = (8,4)
+plotymax=350
 def copos_timing(xsl=100,pos=[25,74],starttimes=[0.0,0.0],endtimes=[0.5,0.5]):
     
     #run_coefficient=int(200/len(pos)) # factor to multiply `xsl` to give number of steps
@@ -121,7 +122,7 @@ def copos_plot_anim(xsl=100,pos=[24,75]):
     return(pl.plot)
 
 
-def copos_plot_all_gaps(xsl=100,pos=[24,75]):
+def copos_plot_all_gaps(xsl=100,pos=[24,75]): # doesn't quite work yet
     xs_plot=copos(xsl,pos)
     numlines=len(xs_plot)
     cm_subsection=[]
@@ -136,11 +137,13 @@ def copos_plot_all_gaps(xsl=100,pos=[24,75]):
         j=0
         for i in pos:
             xaxis.append([x for x in range(j,i-1)])
-            yaxis.append([xs_plot[x] for x in range(j,i-1)])
+            yaxis.append([xs_plot[count][x] for x in range(j,i-1)])
             j=i
         for i in range(len(xaxis)):
-            print(i)
-            myplot.append(pl.plot(xaxis[i],yaxis[i],color=colors[count]))
+            qp=pl.plot(xaxis[i],yaxis[i],color=colors[count])
+            pl.ylim(ymax=plotymax)
+            #myplot.append(pl.plot(xaxis[i],yaxis[i],color=colors[count]))
+            myplot.append(qp)
     return(myplot)
 
 def copos_plot_anim_gaps(xsl=100,pos=[24,75]):
@@ -183,6 +186,6 @@ pos=[int(x) for x in sys.argv[2:]] #for N crossovers
 #pos=[int(x) for x in sys.argv[2:4]]
 #starttimes=[float(x) for x in sys.argv[4:6]]
 #endtimes=[float(x) for x in sys.argv[6:8]]
-copos_plot_anim_gaps(xsl=xsl,pos=pos)
+copos_plot_all_gaps(xsl=xsl,pos=pos)
 #copos_plot_all(xsl=xsl,pos=pos)
 pl.savefig("copos.pdf",dpi=150)

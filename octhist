@@ -1,0 +1,500 @@
+k1=k0+1
+k0
+c.out
+c
+load m.txt
+m
+find(m<0)
+find(m(:,3)<0)
+m(ans,:)
+size(m)
+c=reshape(m(:,3),[25 4])
+find(c(:,2)<0)
+k0
+k0
+o=23;k0=[0:o 2+o:2+o+o 4+o+o:4+o+o+o 6+o+o+o:6+o+o+o+o ];
+k02=[0:o-1 2+o-1:2+o+o-1 4+o+o-1:4+o+o+o-1 6+o+o+o-1:6+o+o+o+o-1]
+k02=[0:o-1 2+o:2+o+o-1 4+o+o:4+o+o+o-1 6+o+o+o:6+o+o+o+o-1]
+k01=[1:o 1+2+o:2+o+o 1+4+o+o:4+o+o+o 1+6+o+o+o:6+o+o+o+o ];
+k0=[k0 k02 k01]
+#k0=[k0 k02 k01]
+k1=[k0+1 k01+1 k02+1]
+k0-k1
+#k1=[k0+1 k01+1 k02+1]
+k0=k0(1:280);
+o=23;k0=[0:o 2+o:2+o+o 4+o+o:4+o+o+o 6+o+o+o:6+o+o+o+o ];
+k0x=[k0 k02 k01]
+k1=[k0+1 k01+1 k02+1]
+k1x=k1;
+whos
+k1x-k0x
+k1x=[k0+1 k02+1 k01+1]
+k1x-k0x
+k1x=[k0+1 k02+1 k01-1]
+k1x-k0x
+#k1x=[k0+1 k02+1 k01-1]
+[k02;k01]
+[k0x;k1x]
+clear
+[1:10;11:20;21:30;31:40]
+k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40];
+k1=[2:10 12:20 22:30 32:40 12:20 11:19 32:40 31:39];
+k0-k1
+[k0;k1]
+plot([k0;k1])
+plot([k0;k1]')
+plot(k0-k1)
+sum([k0;k1])
+plot(ans)
+k0
+[k0;k1]
+#k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40];
+#k1=[2:10 12:20 22:30 32:40 12:20 11:19 32:40 31:39];
+[1:10;11:20;21:30;31:40]
+r=10
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) r+r+1:(r+r+(r-1)+1)]
+[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40]-k0
+[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40]
+k0
+[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40]
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) r+r+1:(r+r+(r-1))+1]
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) r+r+1:(r+r+(r-1)+1)]
+#k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40];
+k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40];
+k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40]
+size(k0)
+k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40]
+#k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 32:40];
+k0
+[1:10;11:20;21:30;31:40]
+#k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30];
+k0=[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30];
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) r+r+1:(r+r+(r-1)+1)]
+k0-[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30];
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) r+r+1:(r+r+(r-1)+1)]
+[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30];
+[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30]
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) (r+r+1:r+r+(r-1))+1]
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) (r+r+1:r+r+(r-1))+1]
+k0-[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30];
+k0-[1:9 11:19 21:29 31:39 1:9 2:10 21:29 22:30]
+k0=[1:r-1 r+1:r+(r-1) r+r+1:r+r+(r-1) r+r+r+1:r+r+r+(r-1) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) (r+r+1:r+r+(r-1))+1]
+[1:10;11:20;21:30;31:40]
+k0=[1+(1:r-1) 1+(r+1:r+(r-1)) 1+(r+r+1:r+r+(r-1)) 1+(r+r+r+1:r+r+r+(r-1)) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) (r+r+1:r+r+(r-1))+1]
+exit
+# Octave 6.2.0, Sat Apr 03 16:58:57 2021 JST <pcarlton@h21.52.238.10.1018183.vlan.kuins.net>
+load m.txt
+load xs_knotsim.txt 
+xs_knotsim
+x=reshape(xs_knotsim(:,1),[25 4])
+x=reshape(xs_knotsim(:,1),[25 4])'
+y=reshape(xs_knotsim(:,2),[25 4])'
+z=reshape(xs_knotsim(:,3),[25 4])'
+plot(x',y','-o')
+axis equal
+x
+diff(x,[],2)
+x=[x(:,1:8) [-18 -18 -18 -18]' x(:,9:end)]
+y
+y=[y(:,1:8) [12 0 0 -12]' y(:,9:end)]
+z
+z=[z(:,1:8) [0 -.5 .5 0]' z(:,9:end)]
+plot(x',y','-o')
+axis equal
+xe=x;ye=y;ze=z;
+xe
+ye
+ye+=7.5
+plot(xe',ye','-o')
+plot(xe',ye','-o');axis equal
+17/2
+ye+=1
+plot(xe',ye','-o');axis equal
+xe
+xe(3,8)
+ye(3,8)
+ye(3,8:9)
+ye(3,8:9)=ye(3,7)
+ye(10:end)
+#ye(10:end)
+ye(3,10:end)
+ye(3,10:end)=ye(3,9)+4.*(1:17)
+plot(ye(3,:))
+xe(3,:)
+xe(3,10:end)=xe(3,9);
+plot(xe(3,:),ye(3,:))
+axis equal
+xe
+ye
+axis([min(xe)-10 max(xe)+10 min(ye)-10 min(ye)+10])
+axis([min(xe(3,:))-10 max(xe(3,:))+10 min(ye(3,:))-10 min(ye(3,:))+10])
+plot(xe',ye','-o');axis equal
+clear xe ye ze
+xe=x;ye=y;ze=z
+xe
+ye
+plot(xe',ye','-o')
+plot(xe',ye','-o');axis equal
+x
+xe(:,9)
+ye(:,9)
+#y=[y(:,1:8) [12 0 0 -12]' y(:,9:end)]
+ye(:,9)=[];xe(:,9)=[];ze(:,9)=[];
+plot(xe',ye','-o');axis equal
+xe(:,9:end)-=4;
+plot(xe',ye','-o');axis equal
+xe-=20
+plot(xe',ye','-o');axis equal
+xe+=40
+plot(xe',ye','-o');axis equal
+x=xe;y=ye;z=ze;
+ze
+plot(xe',ze','-o')
+axis equal
+plot3(xe',y3',ze','-o')
+plot3(xe',ye',ze','-o')
+axis equal
+xe
+mean(xe')
+xe
+xe-=20
+xe+=2
+plot(xe',ze','-o')
+plot(xe',ye','-o');axis equal
+ye
+x=xe;y=ye;z=ze
+xe
+plot(xe',ye','-o');axis equal
+xe+=18
+plot(xe',ye','-o');axis equal
+ye
+ye-=8.5
+ye(1,9)
+diff(xe,[],2)
+xe
+xe(1,9)
+xe(1,9:)=2
+xe(1,9:end)=2
+xe(2,9:end)=2
+ye
+ye(1,9:end)
+[xe(1,:);ye(1,:)]
+ye(1,9:end)+=(4.*(1:14))
+ye(1,9:end)+=(4.*(1:17))
+plot(xe(1,:),ye(1,:),'-o')
+axis equal
+plot(xe',ye,'-o')
+size(xe)
+size(ye)
+plot(xe)
+plot(xe')
+plot(xe',ye')
+#xe(2,9:end)=2
+#xe(1,9:end)=2
+ye(2,9:end)+=(-4.*(1:17))
+plot(xe',ye')
+[xe(2,:);ye(2,:)]
+ye(2,8)
+ye(2,8)+=2
+plot(xe',ye')
+[xe(1,:);ye(1,:)]
+[xe(2,:);ye(2,:)]
+ye(2,9:end)
+ye(2,9)=(-7.5)
+ye(2,10:end)+=10
+plot(xe',ye')
+axis equal
+xe(3:4,:)
+xe(3:4,:)=fliplr(xe(3:4,:));
+plot(xe',ye')
+plot(xe',ye');axis equal
+xe(3:4,:)=fliplr(xe(3:4,:));
+plot(xe',ye');axis equal
+xe(3:4,:)=-(xe(3:4,:));
+plot(xe',ye');axis equal
+ye
+ye(3:4,:)+=16
+ye(3:4,:)+=1
+plot(xe',ye');axis equal
+plot(xe(3,:)',ye(3,:)');axis equal
+xe
+plot(xe',ye','-o');axis equal
+xe
+xe(1,9:end)
+xe(1,9:end)-=4
+xe(2,9:end)-=4
+plot(xe',ye','-o');axis equal
+xe
+xe(3,8:end)
+xe(3,8:end)=2
+xe(4,8:end)=2
+ye
+plot(xe',ye','-o');axis equal
+ye(3:4,9:end)
+ye(3:4,1:end)
+ye(3,9:end)
+ye(3,8:end)
+ye(3,8:end)=ye(3,8)+(4.*(0:18))
+ye(3,8:end)=ye(3,8)+(4.*(0:17))
+ye(4,8:end)=ye(4,8)-(4.*(0:17))
+ye(3,8:end)
+ye(3,8:end)-=2
+plot(xe',ye','-o');axis equal
+xe([1 2],:)-=1.5
+xe([3 4],:)+=1.5
+plot(xe',ye','-o');axis equal
+plot(x(1,:),xe(1,:),'-o')
+plot(x',y','-o',xe',ye','-o')
+plot(x',y','-o',xe',20+ye','-o')
+plot(x',y','-o',xe',120+ye','-o')
+plot(x',y','-o',xe',120+ye','-o');axis equal
+[xe(:,[8 9])]
+[ye(:,[8 9])]
+xe(1:2,1:9)
+xe(1:2,1:8)-=4
+xe(3:4,1:8)+=4;
+plot(x',y','-o',xe',120+ye','-o');axis equal
+plot(x',y','-',xe',ye','o');axis equal
+#dlmwrite('l1x.txt',l1,"delimiter"," ")
+#l1=[l1 l12(2:end) l12(1:end-1)];
+#dlmwrite('m.txt',m,"delimiter"," ")
+minit=[(x')(:) (y')(:) (z')(:)]
+plot(minit,'-o')
+dlmwrite('minit.txt',minit,"delimiter"," ")
+size(l1)
+whos
+#l1=[l1 l12(2:end) l12(1:end-1)];
+#l1=l0+1
+l0=[0:0+23 25:25+23 50:50+23 75:75+23]
+l02=[ 0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21   22   23   24 75   76   77   78   79   80   81   82   83   84   85   86   87   88   89   90   91   92   93   94   95   96   97   98   99]
+l1=l0+1
+l12=[25   26   27   28   29   30   31   32  58   59   60   61   62   63   64   65   66   67   68   69   70   71   72   73   74  50   51   52   53   54   55   56   57  33   34   35   36   37   38   39   40   41   42   43   44   45   46   47   48   49]
+#l1=[l1 l12(2:end) l12(1:end-1)];
+#l12=[25   26   27   28   29   30   31   32  58   59   60   61   62   63   64   65   66   67   68   69   70   71   72   73   74  50   51   52   53   54   55   56   57  33   34   35   36   37   38   39   40   41   42   43   44   45   46   47   48   49]
+l1=[l1 l12(2:end) l12(1:end-1)];
+l0=[l0 l02(1:end-1) l02(2:end)];
+l1
+pwd
+#for l=1:200;h=reshape(a(l:200:end),[2000 2000]);h=nrm2d(log(h)).*255;fn=strcat("imf",sprintf("%.3i",l),".png");imwrite(h,v,fn);end
+#dlmwrite('minit.txt',minit,"delimiter"," ")
+whos
+mf=[(xe')(:) (ye')(:) (ze')(:)]
+dlmwrite('mfinal.txt',mf,"delimiter"," ")
+plot3(m,mf,'-o')
+mfinal=mf;
+plot3(minit,mfinal,'-o')
+axis equal
+plot3(minit',mfinal','-o')
+axis equal
+plot3([minit(:,1:2) zeros(194,1)],[mfinal(:,1:2), 2+zeros(194,1)])
+plot3([minit(:,1:2) zeros(100,1)],[mfinal(:,1:2), 2+zeros(100,1)])
+axis equal
+plot3([minit(:,1:2) zeros(100,1)],[mfinal(:,1:2), 80+zeros(100,1)])
+axis equal
+plot3([minit(:,1:2) zeros(100,1)],[mfinal(:,1:2), 80+zeros(100,1)],'-o')
+mfinal
+plot3([minit(:,1:2) zeros(100,1)],[mfinal(:,1:2) 80+zeros(100,1)],'-o')
+[mfinal(:,1:2) 80+zeros(100,1)]
+[minit(:,1:2) zeros(100,1)]
+plot3([minit(:,1:2) zeros(100,1)]',[mfinal(:,1:2) 80+zeros(100,1)]','-o')
+axis equal
+close 
+whos
+plot(mfinal-minit)
+mfinal-minit
+ans./sqrt(sum(ans.^2,2))
+x
+x-xe
+cat(3,xe-x,ye-y,ze-z)
+z
+ze
+mfinal
+mfinal(:,3)'
+mfinal(:,3)'=0
+mfinal(:,3)=0
+dlmwrite('mfinal.txt',mfinal,"delimiter"," ")
+cat(3,xe-x,ye-y,ze-z)
+sqrt(sum(ans.^2,3))
+xyzdif=cat(3,xe-x,ye-y,ze-z)
+xyzdif./sqrt(sum(xyzdif.^2,3))
+y
+ye
+whos
+#dlmwrite('mfinal.txt',mfinal,"delimiter"," ")
+dlmwrite('l1xx.txt',l1,"delimiter"," ")
+dlmwrite('l0xx.txt',l0,"delimiter"," ")
+o=23;k0=[0:o 2+o:2+o+o 4+o+o:4+o+o+o 6+o+o+o:6+o+o+o+o ];
+k0
+##k1=[2:10 12:20 22:30 32:40 12:20 11:19 32:40 31:39];
+#k0=[1+(1:r-1) 1+(r+1:r+(r-1)) 1+(r+r+1:r+r+(r-1)) 1+(r+r+r+1:r+r+r+(r-1)) 1:r-1 (1:r-1)+1 r+r+1:r+r+(r-1) (r+r+1:r+r+(r-1))+1]
+#k1=[k0+1 k01+1 k02+1]
+k0
+#k01=[1:o 1+2+o:2+o+o 1+4+o+o:4+o+o+o 1+6+o+o+o:6+o+o+o+o ];
+clear k01 k02
+whos
+clear l0 l02 l1 l12
+whos
+k0
+k0
+##k1=[k0+1 k01+1 k02+1]
+whos
+k02=[0:24 75:99]
+k12=[25:32 58:74]
+size(k12)
+k12=[25:32 58:74 50:57 75:82]
+k12=[25:32 58:74 50:57 83:99]
+l0=[k0 k02]
+k1
+l1=[k1 k12]
+dlmwrite('l0.txt',l0,"delimiter"," ")
+dlmwrite('l1.txt',l1,"delimiter"," ")
+size(minit)
+l1
+x(l1)
+x(l0)-x(l1)
+l0
+x(l0+1)-x(l1+1)
+x
+l0
+[l0;l1]
+x(l0+1)-x(l1+1)
+[x(l0+1);x(l1+1)]
+x
+minit(l0+1,:)-minit(l1+1,:)
+sqrt(sum(ans.^2,2))
+minit(l0+1,:)-minit(l1+1,:)
+[l0-l1]
+l0
+l1
+##k1=[k0+1 k01+1 k02+1]
+k1=k0+1
+#k12=[25:32 58:74 50:57 83:99]
+k12=[25:32 58:74 50:57 33:49]
+l1=[k1 k12]
+dlmwrite('l1.txt',l1,"delimiter"," ")
+#a=load('s.2out.i.oct');
+load c.out;x=reshape(c(:,1),[25 4]);y=reshape(c(:,2),[25 4]);z=reshape(c(:,3),[25 4]);plot3(x,y,z,'-o');axis equal
+load c.out;x=reshape(c(:,1),[25 4]);y=reshape(c(:,2),[25 4]);z=reshape(c(:,3),[25 4]);plot3(x,y,z,'-o');axis equal
+load c.out;x=reshape(c(:,1),[25 4]);y=reshape(c(:,2),[25 4]);z=reshape(c(:,3),[25 4]);plot3(x,y,z,'-o');axis equal
+view(90,90)
+load c.out;x=reshape(c(:,1),[25 4]);y=reshape(c(:,2),[25 4]);z=reshape(c(:,3),[25 4]);plot3(x,y,z,'-','linewidth',7);axis equal
+load c.out;x=reshape(c(:,1),[25 4]);y=reshape(c(:,2),[25 4]);z=reshape(c(:,3),[25 4]);plot(x,y,'-','linewidth',7);axis equal
+load c.out;
+load c.out;x1=reshape(c(1:100,1),[25 4]);y1=reshape(c(1:100,2),[25 4]);z1=reshape(c(1:100,3),[25 4]);
+x2=reshape(c(101:200,1),[25 4]);y2=reshape(c(101:200,2),[25 4]);z2=reshape(c(101:200,3),[25 4]);
+plot(x,y,'-','linewidth',7);axis equal
+plot(x1,y1,'-','linewidth',7,);axis equal
+plot(x1,y1,'-','linewidth',7);axis equal
+plot(x1,y1,'-','linewidth',7,x2,y2-30,'-','linewidth',7);axis equal
+plot(x1,y1,'g-','linewidth',7,x2,y2,'r-','linewidth',7);axis equal
+load cc.out;x1=reshape(cc(1:100,1),[25 4]);y1=reshape(cc(1:100,2),[25 4]);z1=reshape(cc(1:100,3),[25 4]);
+plot(x1,y1,'-','linewidth',7);axis equal
+load cc.out;
+whos
+x=cc(1:100:end,1:3)
+plot(x(:,1),x(:,2),'-o')
+plot(x(:,1),x(:,2),'-o');axis equal
+plot(x(:,1),x(:,2),'-o',x(1,1),x(1,2),x(1,3),'ro');axis equal
+plot(x(:,1),x(:,2),'-o',x(1,1),x(1,2),x(1,3),'rx');axis equal
+x=cc(25:100:end,1:3)
+plot(x(:,1),x(:,2),'-o',x(1,1),x(1,2),x(1,3),'rx');axis equal
+x=cc(50:100:end,1:3);
+plot(x(:,1),x(:,2),'-o',x(1,1),x(1,2),x(1,3),'rx');axis equal
+x(1:10,:)
+plot(x(:,1))
+size(x)
+plot(1:101,x(:,1),1:101,x(:,2),1:101,x(:,3))
+cc
+plot(cc)
+plot(cc,'.')
+#for l=0:100;r=(l*100+1):(l+1*100);p=cc(r,:);
+#x1=reshape(cc(1:100,1),[25 4]);y1=reshape(cc(1:100,2),[25 4]);z1=reshape(cc(1:100,3),[25 4]);
+#for l=0:100;r=(l*100+1):(l+1*100);p=cc(r,:);
+c=cc;
+for l=0:100;r=(l*100+1):(l+1*100);cc=c(r,:);x1=reshape(cc(1:100,1),[25 4]);y1=reshape(cc(1:100,2),[25 4]);#
+plot(x1,y1,'-','linewidth',7);axis equal
+axis([-80 80 -80 80])
+#for l=0:100;r=(l*100+1):(l+1*100);cc=c(r,:);x1=reshape(cc(1:100,1),[25 4]);y1=reshape(cc(1:100,2),[25 4]);#
+for l=0:100;r=(l*100+1):(l+1*100);cc=c(r,:);x1=reshape(cc(1:100,1),[25 4]);y1=reshape(cc(1:100,2),[25 4]);plot(x1,y1,'-','linewidth',7);axis equal;axis([-80 80 -80 80]);fn=sprintf("plt%.4d.png",l);print(gcf,fn);end
+size(cc)
+size(c)
+for l=0:100;r=(l*100+1):((l+1)*100);cc=c(r,:);x1=reshape(cc(1:100,1),[25 4]);y1=reshape(cc(1:100,2),[25 4]);plot(x1,y1,'-','linewidth',7);axis equal;axis([-80 80 -80 80]);fn=sprintf("plt%.4d.png",l);print(gcf,fn);end
+exit
+# Octave 6.2.0, Mon Apr 05 18:07:34 2021 JST <pcarlton@h21.52.238.10.1018183.vlan.kuins.net>
+load('minit.txt');
+pwd
+exit
+# Octave 6.2.0, Wed Apr 07 16:26:33 2021 JST <pcarlton@h21.52.238.10.1018183.vlan.kuins.net>
+load('minit.txt');
+load('mfinal.txt');
+st(:,:,1)=reshape(minit(:,:,1),[25 4]);
+st(:,:,1)=reshape(minit(:,:,1),[25 4]);
+size(minit)
+st(:,:,1)=reshape(minit(:,1),[25 4]);
+st(:,:,2)=reshape(minit(:,2),[25 4]);
+fi(:,:,1)=reshape(mfinal(:,1),[25 4]);
+fi(:,:,2)=reshape(mfinal(:,2),[25 4]);
+inc=(fi-st)./100;
+st=st-inc;
+# for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';z(:,1)=interpn(zz(:,1),2);z(:,2)=interpn(zz(:,2),2);dlmwrite(fn,[z zeros(length(z),1)]);end;end
+# for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';z(:,1)=interpn(zz(:,1),2);z(:,2)=interpn(zz(:,2),2);dlmwrite(fn,[z zeros(length(z),1)]);end;end
+history -w
+for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';dlmwrite(fn,[zz zeros(length(z),1)]);end;end
+for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';dlmwrite(fn,[zz zeros(length(zz),1)]);end;end
+ls
+st
+st(:,:,2)=reshape(minit(:,2),[25 4]);
+st(:,:,1)=reshape(minit(:,1),[25 4]);
+st
+inc
+sto=st
+inc=(fi-st)./100;
+inc
+st-inc
+st-inc(:,1,:)
+st-inc
+st
+#for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';dlmwrite(fn,[zz zeros(length(zz),1)]);end;end
+for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';dlmwrite(fn,[zz zeros(length(zz),1)]);end;st=st+inc;end
+# for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);zz=q(:,:,ll)';z(:,1)=interpn(zz(:,1),2);z(:,2)=interpn(zz(:,2),2);dlmwrite(fn,[z zeros(length(z),1)]);end;end
+history -w
+load('mfinal.txt'); load('minit.txt'); st(:,:,1)=reshape(minit(:,1),[25 4]); st(:,:,2)=reshape(minit(:,2),[25 4]); fi(:,:,2)=reshape(mfinal(:,2),[25 4]); fi(:,:,1)=reshape(mfinal(:,1),[25 4]); inc=(fi-st)./100;
+history -w
+load('mfinal.txt'); load('minit.txt'); st(:,:,1)=reshape(minit(:,1),[25 4]); st(:,:,2)=reshape(minit(:,2),[25 4]); fi(:,:,2)=reshape(mfinal(:,2),[25 4]); fi(:,:,1)=reshape(mfinal(:,1),[25 4]); inc=(fi-st)./100;
+function y=in2(x)
+[h,i]=size(x);y=zeros((2*h)-1,i);y(1:2:end,:)=x;y(2:2:end,:)=(x(1:end-1)+x(2:end))./2;end
+in2([1:10]')
+in2(ans)
+st
+st(:,2,2)
+in2(st(:,2,2))
+#for l=0:100;st=st+inc;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;end
+inc
+#for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;st=st+inc;end
+st
+for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;st=st+inc;end
+in2([1:10;2:2:20]')
+type in2
+x=([1:10;2:2:20]')
+[h,i]=size(x)
+y = zeros ((2 * h) - 1, i);
+size(y)
+y (1:2:end, :) = x;
+function y=in2(x)
+[h,i]=size(x);y=zeros((2*h)-1,i);y(1:2:end,:)=x;y(2:2:end,:)=(x(1:end-1,:)+x(2:end,:))./2;end
+for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;st=st+inc;end
+history -w
+cd ~/pov/cosl
+st
+st-fin
+st-mf
+whos
+st-fi
+#for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;st=st+inc;end
+(st+inc)-fi
+(st-inc)-fi
+#for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;st=st+inc;end
+st-fi
+#for l=0:100;q=permute(st,[3,1,2]);for ll=1:4;fn=sprintf("xa%.3i.b%.3i.txt",l,ll);z=in2(q(:,:,ll)');dlmwrite(fn,[z zeros(length(z),1)]);end;st=st+inc;end
+exit
+# Octave 6.2.0, Wed Apr 07 17:31:54 2021 JST <pcarlton@h21.52.238.10.1018183.vlan.kuins.net>
